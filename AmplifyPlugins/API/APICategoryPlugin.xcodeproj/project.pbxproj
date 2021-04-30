@@ -40,6 +40,7 @@
 		216449722587ED5400C548A5 /* GraphQLErrorDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216449702587ED5400C548A5 /* GraphQLErrorDecoderTests.swift */; };
 		216449982587F9BC00C548A5 /* GraphQLResponseDecoder+DecodeDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216449972587F9BC00C548A5 /* GraphQLResponseDecoder+DecodeDataTests.swift */; };
 		216449BF2587FE0900C548A5 /* AWSAppSyncGrpahQLResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216449BE2587FE0900C548A5 /* AWSAppSyncGrpahQLResponseTests.swift */; };
+		2164E6BA263C689100385027 /* GraphQLModelBasedTests+Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164E6B9263C689100385027 /* GraphQLModelBasedTests+Concurrency.swift */; };
 		217856632380C60400A30D19 /* GraphQLWithIAMIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217856622380C60400A30D19 /* GraphQLWithIAMIntegrationTests.swift */; };
 		217856652380C60400A30D19 /* AWSAPICategoryPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B478F5FB2374DBF400C4F92B /* AWSAPICategoryPlugin.framework */; };
 		217856742380C73600A30D19 /* AWSAPICategoryPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B478F5FB2374DBF400C4F92B /* AWSAPICategoryPlugin.framework */; };
@@ -173,7 +174,6 @@
 		FA8EE785238632620097E4F1 /* AWSAPIPlugin+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EE784238632620097E4F1 /* AWSAPIPlugin+Log.swift */; };
 		FA97F5532386CCF500EE9EFE /* AnyModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97F5522386CCF500EE9EFE /* AnyModelIntegrationTests.swift */; };
 		FAA7A5AA24C0E01500CA863F /* AWSGraphQLSubscriptionOperationCancelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7A5A924C0E01500CA863F /* AWSGraphQLSubscriptionOperationCancelTests.swift */; };
-		FAC5F9B1238B70EE00F70F02 /* APICategoryPluginConcurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9554DF238B6C0B00D42A43 /* APICategoryPluginConcurrencyTests.swift */; };
 		FADC469524C0E8AF00EF447B /* GraphQLQueryCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC469424C0E8AF00EF447B /* GraphQLQueryCombineTests.swift */; };
 		FAF2199A24C0F25E00171A3D /* OperationTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2199924C0F25E00171A3D /* OperationTestBase.swift */; };
 		FAF7067024C8EFD300F19DCF /* GraphQLSubscribeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7066F24C8EFD300F19DCF /* GraphQLSubscribeTests.swift */; };
@@ -345,6 +345,7 @@
 		216449702587ED5400C548A5 /* GraphQLErrorDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLErrorDecoderTests.swift; sourceTree = "<group>"; };
 		216449972587F9BC00C548A5 /* GraphQLResponseDecoder+DecodeDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLResponseDecoder+DecodeDataTests.swift"; sourceTree = "<group>"; };
 		216449BE2587FE0900C548A5 /* AWSAppSyncGrpahQLResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAppSyncGrpahQLResponseTests.swift; sourceTree = "<group>"; };
+		2164E6B9263C689100385027 /* GraphQLModelBasedTests+Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLModelBasedTests+Concurrency.swift"; sourceTree = "<group>"; };
 		217856602380C60400A30D19 /* GraphQLWithIAMIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphQLWithIAMIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		217856622380C60400A30D19 /* GraphQLWithIAMIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLWithIAMIntegrationTests.swift; sourceTree = "<group>"; };
 		217856642380C60400A30D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -528,7 +529,6 @@
 		FA249EE424C5F8CC009B3CE8 /* GraphQLSubscribeCombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLSubscribeCombineTests.swift; sourceTree = "<group>"; };
 		FA249EEC24C64303009B3CE8 /* MockSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSubscription.swift; sourceTree = "<group>"; };
 		FA8EE784238632620097E4F1 /* AWSAPIPlugin+Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AWSAPIPlugin+Log.swift"; sourceTree = "<group>"; };
-		FA9554DF238B6C0B00D42A43 /* APICategoryPluginConcurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategoryPluginConcurrencyTests.swift; sourceTree = "<group>"; };
 		FA97F5522386CCF500EE9EFE /* AnyModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyModelIntegrationTests.swift; sourceTree = "<group>"; };
 		FAA7A5A724C0DE1900CA863F /* RESTCombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTCombineTests.swift; sourceTree = "<group>"; };
 		FAA7A5A924C0E01500CA863F /* AWSGraphQLSubscriptionOperationCancelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSGraphQLSubscriptionOperationCancelTests.swift; sourceTree = "<group>"; };
@@ -722,6 +722,7 @@
 				21FDBB752587D9E40086FCDC /* GraphQLConnectionScenario6Tests.swift */,
 				21F40A2D23A0707E0074678E /* GraphQLModelBasedTests-amplifyconfiguration.json */,
 				217856C12383339D00A30D19 /* GraphQLModelBasedTests.swift */,
+				2164E6B9263C689100385027 /* GraphQLModelBasedTests+Concurrency.swift */,
 				212B299E259251F100593ED5 /* GraphQLModelBasedTests+List.swift */,
 				21598CEF23A00F8400529F29 /* README.md */,
 			);
@@ -799,7 +800,6 @@
 			isa = PBXGroup;
 			children = (
 				FA97F5522386CCF500EE9EFE /* AnyModelIntegrationTests.swift */,
-				FA9554DF238B6C0B00D42A43 /* APICategoryPluginConcurrencyTests.swift */,
 				21598CEC23A008DB00529F29 /* GraphQLModelBased */,
 				21598CEB23A0041400529F29 /* GraphQLSyncBased */,
 				217856732380C73600A30D19 /* Info.plist */,
@@ -2275,10 +2275,10 @@
 			files = (
 				217D60002578369F009F0639 /* GraphQLConnectionScenario4Tests.swift in Sources */,
 				217D60032578369F009F0639 /* GraphQLConnectionScenario3Tests.swift in Sources */,
-				FAC5F9B1238B70EE00F70F02 /* APICategoryPluginConcurrencyTests.swift in Sources */,
 				21FE04BD25894F8800B81D72 /* GraphQLConnectionScenario3Tests+Subscribe.swift in Sources */,
 				216201E323920A6200AB2E10 /* GraphQLSyncBasedTests.swift in Sources */,
 				21FE04BB25894F8800B81D72 /* GraphQLConnectionScenario3Tests+Helpers.swift in Sources */,
+				2164E6BA263C689100385027 /* GraphQLModelBasedTests+Concurrency.swift in Sources */,
 				21FDBB762587D9E40086FCDC /* GraphQLConnectionScenario6Tests.swift in Sources */,
 				FA97F5532386CCF500EE9EFE /* AnyModelIntegrationTests.swift in Sources */,
 				217D60012578369F009F0639 /* GraphQLConnectionScenario5Tests.swift in Sources */,

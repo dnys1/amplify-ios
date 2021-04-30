@@ -53,6 +53,7 @@ DEPENDENCIES:
   - AmplifyPlugins/AWSAPIPlugin (from `../../`)
   - AmplifyPlugins/AWSCognitoAuthPlugin (from `../../`)
   - AmplifyTestCommon (from `../../`)
+  - AppSyncRealTimeClient (from `https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git`, branch `feat/data-race`)
   - AWSMobileClient (~> 2.24.0)
   - AWSPluginsCore (from `../../`)
   - CwlCatchException (from `https://github.com/mattgallagher/CwlCatchException.git`, tag `1.2.0`)
@@ -63,7 +64,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AppSyncRealTimeClient
     - AWSAuthCore
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
@@ -81,6 +81,9 @@ EXTERNAL SOURCES:
     :path: "../../"
   AmplifyTestCommon:
     :path: "../../"
+  AppSyncRealTimeClient:
+    :branch: feat/data-race
+    :git: https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git
   AWSPluginsCore:
     :path: "../../"
   CwlCatchException:
@@ -91,6 +94,9 @@ EXTERNAL SOURCES:
     :tag: 1.2.0
 
 CHECKOUT OPTIONS:
+  AppSyncRealTimeClient:
+    :commit: 35eccb323609270b4e9f1af7681a196129a8b6fc
+    :git: https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git
   CwlCatchException:
     :git: https://github.com/mattgallagher/CwlCatchException.git
     :tag: 1.2.0
@@ -116,6 +122,6 @@ SPEC CHECKSUMS:
   SwiftFormat: 3b5caa6389b2b9adbc00e133b3ccc8c6e687a6a4
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 04860e414d616b67d24ed3346a60700f427764b9
+PODFILE CHECKSUM: 752ae8a16c26abe45539ca0c175994e4d3d3607c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

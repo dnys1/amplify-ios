@@ -9,6 +9,7 @@ target 'AWSDataStoreCategoryPlugin' do
   pod 'Amplify', :path => '../../'
   pod 'AWSPluginsCore', :path => '../../'
   pod "SQLite.swift", "~> 0.12.0"
+  pod "AppSyncRealTimeClient", :git => 'https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git', :branch => 'feat/data-race'
 
   target "AWSDataStoreCategoryPluginTests" do
     inherit! :complete
@@ -25,6 +26,7 @@ target "HostApp" do
   pod 'AmplifyTestCommon', :path => '../../'
   pod 'Amplify', :path => '../../'
   pod "AWSMobileClient", $OPTIMISTIC_AWS_SDK_VERSION
+  pod "AppSyncRealTimeClient", :git => 'https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git', :branch => 'feat/data-race'
 
   target "AWSDataStoreCategoryPluginIntegrationTests" do
     inherit! :complete
