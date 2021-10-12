@@ -59,43 +59,11 @@ extension StorageEngine {
             guard schema.isSyncable && schema.hasAuthenticationRules else {
                 return false
             }
-            if let rulesRequireAuthPlugin = schema.authRules.requireAuthPlugin {
-                return rulesRequireAuthPlugin
-            }
-
-#if canImport(AWSAPIPlugin)
-            // Fall back to the plugin configuration if a determination cannot be made from the auth rules.
-            guard let awsPlugin = apiPlugin as? AWSAPIPlugin else {
-                // No determination can be made. Throw error?
-                return false
-            }
-            return awsPlugin.hasAuthPluginRequirement
-#else
-            return false
-#endif
+            
+            // Fallback to previous resolution strategy if rules do not contain provider info.
+            return schema.authRules.requireAuthPlugin ?? true
         }
         return modelsRequireAuthPlugin
-    }
-}
-
-#if canImport(AWSAPIPlugin)
-internal extension AWSAPIPlugin {
-    var hasAuthPluginRequirement: Bool {
-        return pluginConfig.endpoints.values.contains {
-            $0.authorizationType.requiresAuthPlugin
-        }
-    }
-}
-#endif
-
-internal extension AWSAuthorizationType {
-    var requiresAuthPlugin: Bool {
-        switch self {
-        case .none, .apiKey, .openIDConnect, .function:
-            return false
-        case .awsIAM, .amazonCognitoUserPools:
-            return true
-        }
     }
 }
 
